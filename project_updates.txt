@@ -1,0 +1,6 @@
+
+Project Updates:
+1. Created the initial project structure and files.
+2. Set up the main application loop and GUI.
+3. Moved the GUI setup function to the `gui.py` file and updated the `main.py` file to import this function.
+4. User created an account with Alpaca and obtained an API key for paper trading.

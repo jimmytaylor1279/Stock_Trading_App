@@ -1,0 +1,14 @@
+
+Next Steps:
+1. Implement the functionality for monitoring stock prices using the Alpaca API.
+2. Implement the graphing functionality for the current stock being traded.
+3. Implement the functionality for displaying the top 20 most active stocks.
+4. Implement the functionality for displaying the account balance.
+5. Implement the functionality for switching between paper trading and real trading.
+6. Implement the functionality for getting stock history and training a neural network.
+7. Implement the functionality for entering and exiting trades.
+8. Implement the functionality for handling multiple stocks and trades.
+9. Implement error handling, logging, and user-friendly interface features.
+10. Implement secure handling of user credentials.
+11. Ensure the code follows PEP 8 coding standards.
+12. Rearrange the GUI layout as per the requirements.
