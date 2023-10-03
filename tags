@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	A:/All_FIles_and_Folders/Documents/Stock_Trading_App/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/80ee839/
+Main	main.py	/^class Main:$/;"	c
+NeuralNetwork	neuralNetwork.py	/^class NeuralNetwork:$/;"	c
+Trader	trader.py	/^class Trader:$/;"	c
+__init__	main.py	/^    def __init__(self):$/;"	m	class:Main
+__init__	neuralNetwork.py	/^    def __init__(self, input_nodes, hidden_nodes, output_nodes):$/;"	m	class:NeuralNetwork
+__init__	trader.py	/^    def __init__(self):$/;"	m	class:Trader
+add_help_section	main.py	/^    def add_help_section(self):$/;"	m	class:Main
+app	main.py	/^    app = Main()$/;"	v
+customize_theme	main.py	/^    def customize_theme(self):$/;"	m	class:Main
+enable_multi_threading	main.py	/^    def enable_multi_threading(self):$/;"	m	class:Main
+export_data	main.py	/^    def export_data(self):$/;"	m	class:Main
+feedforward	neuralNetwork.py	/^    def feedforward(self, input_array):$/;"	m	class:NeuralNetwork
+handle_trade_logic	main.py	/^    def handle_trade_logic(self):$/;"	m	class:Main
+initialize_backup	main.py	/^    def initialize_backup(self):$/;"	m	class:Main
+initialize_error_handling	main.py	/^    def initialize_error_handling(self):$/;"	m	class:Main
+nn	neuralNetwork.py	/^    nn = NeuralNetwork(2, 2, 1)$/;"	v
+np	neuralNetwork.py	/^import numpy as np$/;"	I	nameref:module:numpy
+output	neuralNetwork.py	/^    output = nn.feedforward([1.0, 0.5])$/;"	v
+place_trade	trader.py	/^    def place_trade(self, stock_symbol):$/;"	m	class:Trader
+run	main.py	/^    def run(self):$/;"	m	class:Main
+send_notifications	main.py	/^    def send_notifications(self):$/;"	m	class:Main
+set_trading_limits	main.py	/^    def set_trading_limits(self):$/;"	m	class:Main
+setup_gui	gui.py	/^def setup_gui():$/;"	f
+sigmoid	neuralNetwork.py	/^    def sigmoid(x):$/;"	m	class:NeuralNetwork
+sigmoid_derivative	neuralNetwork.py	/^    def sigmoid_derivative(x):$/;"	m	class:NeuralNetwork
+tk	gui.py	/^import tkinter as tk$/;"	I	nameref:module:tkinter
+tk	main.py	/^import tkinter as tk$/;"	I	nameref:module:tkinter
+tradeapi	trader.py	/^import alpaca_trade_api as tradeapi$/;"	I	nameref:module:alpaca_trade_api
+train	neuralNetwork.py	/^    def train(self, input_array, target_array):$/;"	m	class:NeuralNetwork
+update_market_news	main.py	/^    def update_market_news(self):$/;"	m	class:Main
