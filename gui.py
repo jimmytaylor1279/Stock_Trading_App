@@ -1,57 +1,52 @@
 import tkinter as tk
 from tkinter import ttk
-from symbolUtilities import update_symbols, get_default_symbol, get_stock_price
-
 
 class StockAppGUI:
-    """Class to create the GUI for the Stock Trading App."""
-    
+    """
+    Class to handle the GUI components of the Stock Trading App.
+    """
+
     def __init__(self, master):
-        """Initialize the GUI components."""
+        """
+        Initialize the GUI components.
+        """
         self.master = master
         self.master.title("Stock Trading App")
-        self.master.geometry("400x400")
-
-        self.label = tk.Label(
-            self.master, text="Welcome to the Stock Trading App")
-        self.label.pack()
-
-        self.update_button = tk.Button(
-            self.master, text="Update Symbols", command=self.update_symbols)
-        self.update_button.pack()
-
-        self.default_symbol = get_default_symbol()
-        self.stock_price = get_stock_price(self.default_symbol)
-
-        self.symbol_label = tk.Label(
-            self.master, text=f"Current Symbol: {self.default_symbol}")
-        self.symbol_label.pack()
-
-        self.price_label = tk.Label(
-            self.master, text=f"Stock Price: {self.stock_price}")
-        self.price_label.pack()
-
-        self.symbol_dropdown = ttk.Combobox(
-            self.master, values=[], postcommand=self.update_dropdown)
-        self.symbol_dropdown.pack()
-
-        self.exit_button = tk.Button(
-            self.master, text="Exit", command=self.master.quit)
-        self.exit_button.pack()
-
+        
+        # Label to display stock price
+        self.stock_price_label = tk.Label(master, text="Stock Price:")
+        self.stock_price_label.grid(row=0, column=0)
+        
+        # Label to display stock symbol
+        self.stock_symbol_label = tk.Label(master, text="Stock Symbol:")
+        self.stock_symbol_label.grid(row=1, column=0)
+        
+        # Dropdown for stock symbols
+        self.stock_symbol_var = tk.StringVar()
+        self.stock_symbol_dropdown = ttk.Combobox(master, textvariable=self.stock_symbol_var)
+        self.stock_symbol_dropdown.grid(row=1, column=1)
+        
+        # Button to update stock symbols
+        self.update_symbols_button = tk.Button(master, text="Update Symbols", command=self.update_symbols)
+        self.update_symbols_button.grid(row=2, column=0)
+        
+        # Button to update dropdown values
+        self.update_dropdown_button = tk.Button(master, text="Update Dropdown", command=self.update_dropdown_values)
+        self.update_dropdown_button.grid(row=2, column=1)
+        
     def update_symbols(self):
-        """Update the trading symbols and refresh the GUI."""
-        update_symbols()
-        self.default_symbol = get_default_symbol()
-        self.stock_price = get_stock_price(self.default_symbol)
-        self.symbol_label.config(text=f"Current Symbol: {self.default_symbol}")
-        self.price_label.config(text=f"Stock Price: {self.stock_price}")
-
-    def update_dropdown(self):
-        """Update the dropdown values based on available symbols."""
-        # Logic to update dropdown values
+        """
+        Function to update trading symbols.
+        """
+        # Code to update trading symbols goes here
         pass
-
+    
+    def update_dropdown_values(self):
+        """
+        Function to update dropdown values.
+        """
+        # Code to update dropdown values goes here
+        pass
 
 if __name__ == "__main__":
     root = tk.Tk()
