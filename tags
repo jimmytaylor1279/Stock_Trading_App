@@ -4,38 +4,50 @@
 !_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
-!_TAG_PROC_CWD	A:/All_FIles_and_Folders/Documents/Stock_Trading_App/	//
+!_TAG_PROC_CWD	A:/All_FIles_and_Folders/Documents/Autogen/planning/Stock_Trading_App/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	/80ee839/
 Main	main.py	/^class Main:$/;"	c
 NeuralNetwork	neuralNetwork.py	/^class NeuralNetwork:$/;"	c
+StockAppGUI	gui.py	/^class StockAppGUI:$/;"	c
 Trader	trader.py	/^class Trader:$/;"	c
+__init__	gui.py	/^    def __init__(self, master):$/;"	m	class:StockAppGUI
 __init__	main.py	/^    def __init__(self):$/;"	m	class:Main
 __init__	neuralNetwork.py	/^    def __init__(self, input_nodes, hidden_nodes, output_nodes):$/;"	m	class:NeuralNetwork
 __init__	trader.py	/^    def __init__(self):$/;"	m	class:Trader
 add_help_section	main.py	/^    def add_help_section(self):$/;"	m	class:Main
+app	gui.py	/^    app = StockAppGUI(root)$/;"	v
 app	main.py	/^    app = Main()$/;"	v
 customize_theme	main.py	/^    def customize_theme(self):$/;"	m	class:Main
 enable_multi_threading	main.py	/^    def enable_multi_threading(self):$/;"	m	class:Main
 export_data	main.py	/^    def export_data(self):$/;"	m	class:Main
 feedforward	neuralNetwork.py	/^    def feedforward(self, input_array):$/;"	m	class:NeuralNetwork
+fetch_fortune_500_symbols	symbolUtilities.py	/^def fetch_fortune_500_symbols():$/;"	f
+fetch_most_active_symbols	symbolUtilities.py	/^def fetch_most_active_symbols(symbols):$/;"	f
+fortune_500_symbols	symbolUtilities.py	/^    fortune_500_symbols = fetch_fortune_500_symbols()$/;"	v
 handle_trade_logic	main.py	/^    def handle_trade_logic(self):$/;"	m	class:Main
 initialize_backup	main.py	/^    def initialize_backup(self):$/;"	m	class:Main
 initialize_error_handling	main.py	/^    def initialize_error_handling(self):$/;"	m	class:Main
+most_active_symbols	symbolUtilities.py	/^    most_active_symbols = fetch_most_active_symbols(fortune_500_symbols)$/;"	v
 nn	neuralNetwork.py	/^    nn = NeuralNetwork(2, 2, 1)$/;"	v
 np	neuralNetwork.py	/^import numpy as np$/;"	I	nameref:module:numpy
 output	neuralNetwork.py	/^    output = nn.feedforward([1.0, 0.5])$/;"	v
+pd	symbolUtilities.py	/^import pandas as pd$/;"	I	nameref:module:pandas
 place_trade	trader.py	/^    def place_trade(self, stock_symbol):$/;"	m	class:Trader
+root	gui.py	/^    root = tk.Tk()$/;"	v
 run	main.py	/^    def run(self):$/;"	m	class:Main
 send_notifications	main.py	/^    def send_notifications(self):$/;"	m	class:Main
 set_trading_limits	main.py	/^    def set_trading_limits(self):$/;"	m	class:Main
-setup_gui	gui.py	/^def setup_gui():$/;"	f
 sigmoid	neuralNetwork.py	/^    def sigmoid(x):$/;"	m	class:NeuralNetwork
 sigmoid_derivative	neuralNetwork.py	/^    def sigmoid_derivative(x):$/;"	m	class:NeuralNetwork
 tk	gui.py	/^import tkinter as tk$/;"	I	nameref:module:tkinter
 tk	main.py	/^import tkinter as tk$/;"	I	nameref:module:tkinter
 tradeapi	trader.py	/^import alpaca_trade_api as tradeapi$/;"	I	nameref:module:alpaca_trade_api
 train	neuralNetwork.py	/^    def train(self, input_array, target_array):$/;"	m	class:NeuralNetwork
+update_dropdown	symbolUtilities.py	/^def update_dropdown(symbols):$/;"	f
+update_dropdown_values	gui.py	/^    def update_dropdown_values(self):$/;"	m	class:StockAppGUI
 update_market_news	main.py	/^    def update_market_news(self):$/;"	m	class:Main
+update_symbols	gui.py	/^    def update_symbols(self):$/;"	m	class:StockAppGUI
+yf	symbolUtilities.py	/^import yfinance as yf$/;"	I	nameref:module:yfinance
